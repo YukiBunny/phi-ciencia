@@ -1,0 +1,35 @@
+/* Font-faces */
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../font/ubuntu-regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../font/ubuntu-italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../font/ubuntu-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(../font/ubuntu-bold-italic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* General */
+
+h1, h2, h3, h4, h5, h6, p, b, strong, i, em, span, abbr, a, small, sub, sup, mark, del, ins {
+    font-family: ubuntu;
+}
+
+/* Clases y Ides */
