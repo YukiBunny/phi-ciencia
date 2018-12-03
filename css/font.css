@@ -2,34 +2,65 @@
 
 @font-face {
     font-family: ubuntu;
-    src: url(../font/ubuntu-regular.ttf);
+    src: url(../font/ubuntu.ttf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../font/nunito-regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
-    font-family: ubuntu;
-    src: url(../font/ubuntu-italic.ttf);
+    font-family: nunito;
+    src: url(../font/nunito-bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../font/nunito-light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../font/nunito-italic.ttf);
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ubuntu;
-    src: url(../font/ubuntu-bold.ttf);
+    font-family: nunito;
+    src: url(../font/nunito-bold-italic.ttf);
     font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: ubuntu;
-    src: url(../font/ubuntu-bold-italic.ttf);
-    font-weight: bold;
+    font-family: nunito;
+    src: url(../font/nunito-light-italic.ttf);
+    font-weight: lighter;
     font-style: italic;
 }
 
 /* General */
 
-h1, h2, h3, h4, h5, h6, p, b, strong, i, em, span, abbr, a, small, sub, sup, mark, del, ins {
+h1, h2, h3, h4, h5, h6 {
     font-family: ubuntu;
+}
+
+p, b, strong, i, em, span, abbr, a, small, sub, sup, mark, del, ins {
+    font-family: nunito;
+}
+
+h1 {
+    padding: 80px 0 10px 0;
+    letter-spacing: 7px;
+    width: 250px;
+    margin: 0 auto 20px auto;
+    color: gray;
+    border-bottom: 3px solid darkgray;
 }
 
 /* Clases y Ides */
