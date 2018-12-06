@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PHI Ciencia 3D</title>
     <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estructura.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/brands.css">
@@ -19,7 +20,7 @@
     <header>
         <nav id="colapsable_nav">
             <i class="fas fa-bars" id="boton_nav"></i>
-            <div id="colapsable">
+            <div id="colapsable" style="display:none">
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#proyectos">Proyectos</a>
@@ -57,6 +58,19 @@
     </section>
     <section id="contacto">
         <h1>CONTACTO</h1>
+        <form action="#">
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject" id="form_subject">
+            <label for="ocupation">Ocupación</label>
+            <select name="" id="" required>
+                <option value="" disabled selected hidden>Elegir uno...</option>
+                <option value="profesor">Profesor</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesional">Profesional</option>
+                <option value="otro">Otro</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
     </section>
 </body>
 
