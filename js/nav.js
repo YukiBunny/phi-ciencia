@@ -1,3 +1,3 @@
-$("#desplegable_nav").click(function ()) {
+$("#boton").click(function ()) {
     $("#desplegable").slidetoggle(1000);
 });
