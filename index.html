@@ -5,29 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PHI Ciencia</title>
+    <title>PHI Ciencia 3D</title>
     <script src="js/jquery.min.js"></script>
     <link rel="stylesheet" href="css/estructura.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/solid.css">
     <link rel="stylesheet" href="css/font.css">
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
     <header>
-        <img id="logo" href="#inicio" src="img/logo-full.png" alt="">
+        <nav id="colapsable_nav">
+            <i class="fas fa-bars" id="boton_nav"></i>
+            <div id="colapsable">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <img id="logo" href="#inicio" src="img/logo-full.png" alt="Phiciencia3D">
         <nav id="visible_nav">
             <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
-        </nav>
-        <div id="desplegable_nav">
-            <img style="background-color:orange;width: 10px;height: 10px" id="boton">
-            <nav id="desplegable">
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-        </div>
         </nav>
     </header>
     <section id="inicio">

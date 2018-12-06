@@ -1,3 +1,5 @@
-$("#boton").click(function ()) {
-    $("#desplegable").slidetoggle(1000);
-});
+$(function () {
+    $("#boton_nav").click(function () {
+        $("#colapsable").slideToggle(500);
+    })
+})
