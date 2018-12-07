@@ -1,10 +1,9 @@
 $(function () {
-    $('#form_button').sendMail() {
-        //Variables
-        var to = 'phiciencia@gmail.com";
+    $('#form_button').click(function () {
+        var to = 'phiciencia@gmail.com';
         var subject = "?subject=" + $("#form_subject").val();
-        var body = '&body=' + $('#form_message').val() + $('#form_ocupation');
-        //Funcion
+        var body = '&body=' + $('#form_message').val() + '%0D%0A' + $('#form_ocupation').val();
+
         window.open('mailto:' + to + subject + body, '_blank');
-    }
+    })
 })
