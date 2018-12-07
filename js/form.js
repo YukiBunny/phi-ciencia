@@ -5,5 +5,6 @@ $(function () {
         var body = '&body=' + $('#form_message').val() + '%0D%0A' + $('#form_ocupation').val();
 
         window.open('mailto:' + to + subject + body, '_blank');
+
     })
 })
