@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/solid.css">
     <link rel="stylesheet" href="css/font.css">
     <script src="js/nav.js"></script>
+    <script src="js/form.js"></script>
 </head>
 
 <body>
@@ -58,18 +59,24 @@
     </section>
     <section id="contacto">
         <h1>CONTACTO</h1>
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
         <form action="#">
             <label for="subject">Asunto</label>
-            <input type="text" name="subject" id="form_subject">
+            <input type="text" name="subject" id="form_subject" placeholder="Adjunta un asunto" required>
             <label for="ocupation">Ocupación</label>
-            <select name="" id="" required>
-                <option value="" disabled selected hidden>Elegir uno...</option>
+            <select id="form_ocupation" required>
+                <option disabled selected hidden>Elige uno</option>
                 <option value="profesor">Profesor</option>
                 <option value="estudiante">Estudiante</option>
                 <option value="profesional">Profesional</option>
                 <option value="otro">Otro</option>
             </select>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="message">Mensaje</label>
+            <textarea id="form_message" cols="30" rows="10" placeholder="Escribe tu mensaje" required></textarea>
+            <button id="form_button">Enviar</button>
         </form>
     </section>
 </body>

@@ -11,3 +11,18 @@ $(function () {
         $('#colapsable').slideToggle(300);
     });
 });
+
+$(window).scroll(function () {
+    var position = $(window).scrollTop();
+    var page = ($(window).height() - 60)
+    if (position >= page) {
+        $('#boton_nav').addClass('scrolldown_boton');
+        $('#logo').addClass('scrolldown_logo');
+
+    }
+    else {
+        $('#boton_nav').removeClass('scrolldown_boton');
+        $('#logo').removeClass('scrolldown_logo');
+    }
+
+})
