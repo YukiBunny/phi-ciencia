@@ -1,11 +1,6 @@
 /* Font-faces */
 
 @font-face {
-    font-family: ubuntu;
-    src: url(../font/ubuntu.ttf);
-}
-
-@font-face {
     font-family: nunito;
     src: url(../font/nunito-regular.ttf);
     font-weight: normal;
@@ -47,7 +42,8 @@
 /* General */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: ubuntu;
+    font-family: nunito;
+    font-weight: bold;
 }
 
 p, b, strong, em, span, abbr, a, small, sub, sup, mark, del, ins, label, textarea, input {
@@ -55,12 +51,23 @@ p, b, strong, em, span, abbr, a, small, sub, sup, mark, del, ins, label, textare
 }
 
 h1 {
-    padding: 80px 0 10px 0;
-    letter-spacing: 7px;
+    font-size: 1.75em;
     width: 250px;
+    padding: 110px 0 10px 0;
+    letter-spacing: 7px;
     margin: 0 auto 20px auto;
-    color: gray;
-    border-bottom: 3px solid darkgray;
+    color: #f7931e;
+    border-bottom: 3px solid #f7931e;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 /* Clases y Ides */
