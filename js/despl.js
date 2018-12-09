@@ -6,11 +6,21 @@ $(function () {
 	});
 	$('#nosotros_despl>h2').click(function () {
 		var div = $(this).siblings('div');
-		if (div.css('display') == 'none') {
-			$('#nosotros_box').animate({ 'min-height': div.height() + $(this).outerHeight(true) }, 500);
+
+		var isHidden = div.css('display') == 'none';
+		var newHeight = div.height() + $(this).outerHeight(true); // div interno + titulo(c/ margen)
+		var actualHeight = $('#nosotros_box').height(); // div externo
+		if (isHidden) { // COLAPSADO -> DESPLEGADO
+			if (actualHeight < newHeight) {
+				$('#nosotros_box').animate({ 'min-height': newHeight }, 500); // Altura exterior
+			}
+			else {
+				div.height(div.height() + actualHeight - newHeight); // Altura texto
+			}
 		}
-		else {
+		else { // DESPLEGADO -> COLAPSADO
 			$('#nosotros_box').animate({ 'min-height': '50vh' }, 500);
+			div.height('auto');
 		}
 		div.slideToggle(500);
 		$(this).children('i').toggleClass('fa-caret-down');
