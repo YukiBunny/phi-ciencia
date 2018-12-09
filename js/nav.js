@@ -14,13 +14,17 @@ $(function () {
 
 $(window).scroll(function () {
     var position = $(window).scrollTop();
-    var page = ($(window).height() - 60)
+    var page = ($(window).height())
     if (position >= page) {
+        $('header').addClass('scrolldown_header');
+        $('#colapsable').addClass('scrolldown_nav');
         $('#boton_nav').addClass('scrolldown_boton');
         $('#logo').addClass('scrolldown_logo');
 
     }
     else {
+        $('header').removeClass('scrolldown_header');
+        $('#colapsable').removeClass('scrolldown_nav');
         $('#boton_nav').removeClass('scrolldown_boton');
         $('#logo').removeClass('scrolldown_logo');
     }

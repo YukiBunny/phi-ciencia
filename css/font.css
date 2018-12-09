@@ -27,13 +27,6 @@
 
 @font-face {
     font-family: nunito;
-    src: url(../font/nunito-bold-italic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: nunito;
     src: url(../font/nunito-light-italic.ttf);
     font-weight: lighter;
     font-style: italic;
@@ -41,33 +34,52 @@
 
 /* General */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, b, strong, em, span, abbr, a, small, sub, sup, mark, del, ins, label, textarea, input {
     font-family: nunito;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b {
     font-weight: bold;
 }
 
-p, b, strong, em, span, abbr, a, small, sub, sup, mark, del, ins, label, textarea, input {
-    font-family: nunito;
+i, em {
+    font-style: italic;
+}
+
+p {
+    color: white;
+    padding: 10px;
+    text-align: justify;
 }
 
 h1 {
-    font-size: 1.75em;
-    width: 250px;
+    font-size: 1.6em;
+    width: 80%;
     padding: 110px 0 10px 0;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
     margin: 0 auto 20px auto;
     color: #f7931e;
     border-bottom: 3px solid #f7931e;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.7em;
     margin: 10px 0;
+    color: white;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.5em;
+    margin-bottom: 0.5em;
+    color: white;
 }
 
-/* Clases y Ides */
+h4 {
+    font-size: 1em;
+    color: white;
+}
+
+#nosotros p {
+    font-size: 0.9em;
+}
