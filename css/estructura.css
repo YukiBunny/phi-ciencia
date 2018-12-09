@@ -160,15 +160,15 @@ article {
 }
 
 #servicios article:nth-last-child(3) {
-    background-image: url(../img/sevicios/capacitacion.jpg)
+    background-image: url(../img/sevicios/soporte.jpg)
 }
 
 #servicios article:nth-last-child(2) {
-    background-image: url(../img/sevicios/capacitacion.jpg)
+    background-image: url(../img/sevicios/apoyo.jpg)
 }
 
 #servicios article:nth-last-child(1) {
-    background-image: url(../img/sevicios/capacitacion.jpg)
+    background-image: url(../img/sevicios/.jpg)
 }
 
 #servicios article div {
