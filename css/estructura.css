@@ -140,7 +140,7 @@ article {
 
 #servicios {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1.5%;
+    grid-gap: 40px;
     overflow: hidden;
 }
 
@@ -148,6 +148,7 @@ article {
     height: 60vh;
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 
 #servicios article:nth-last-child(5) {
@@ -189,19 +190,19 @@ article {
 #proyectos article img {
     width: 60%;
     border-radius: 50%;
-    background-color: gray;
-    /*non*/
 }
 
 #nosotros_box {
     position: relative;
-    min-height: 50vh;
+    min-height: 300px;
     background: #222323 url(../img/mañana.png)center no-repeat;
     background-size: contain;
     box-shadow: 0.5px 2px 5px #00000033;
 }
 
 #nosotros_despl {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     background-color: #23232380;
     position: absolute;
     width: 100%;

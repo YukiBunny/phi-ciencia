@@ -42,8 +42,12 @@ h1, h2, h3, h4, h5, h6, strong, b {
     font-weight: bold;
 }
 
-i, em {
+em {
     font-style: italic;
+}
+
+em, b, strong {
+    color: hsl(32, 93%, 80%);
 }
 
 p {
