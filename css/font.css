@@ -91,3 +91,15 @@ h4 {
 #nosotros p {
     font-size: 0.9em;
 }
+
+#proyectos h3 {
+    color: black;
+}
+
+#proyectos p {
+    color: #2d2d2d;
+}
+
+span {
+    font-weight: bold;
+}
