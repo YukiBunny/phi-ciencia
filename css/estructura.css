@@ -111,7 +111,7 @@ nav>a:hover, nav>div>a:hover {
 
 section {
     display: grid;
-    padding: 0 5%;
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -160,7 +160,7 @@ article {
 }
 
 #servicios article:nth-last-child(3) {
-    background-image: url(../img/sevicios/soporte.jpg)
+    background-image: url(../img/sevicios/soporte.jpeg)
 }
 
 #servicios article:nth-last-child(2) {
@@ -168,7 +168,7 @@ article {
 }
 
 #servicios article:nth-last-child(1) {
-    background-image: url(../img/sevicios/.jpg)
+    background-image: url(../img/sevicios/cnc.jpeg)
 }
 
 #servicios article div {
