@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -13,6 +14,8 @@ body {
     background-repeat: repeat-y;
     background-position-x: right;
     background-attachment: fixed;
+    -webkit-transition: background-image 0.2s;
+    -o-transition: background-image 0.2s;
     transition: background-image 0.2s;
 }
 
@@ -23,23 +26,37 @@ header {
     height: 100px;
     padding: 10px 5%;
     position: fixed;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 0.25fr 0.2fr 1fr 0.2fr 0.25fr;
     grid-template-columns: 0.25fr 1fr 0.25fr;
     grid-gap: 0.2fr;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #000000bf), color-stop(80%, transparent));
+    background-image: -webkit-linear-gradient(#000000bf 20%, transparent 80%);
+    background-image: -o-linear-gradient(#000000bf 20%, transparent 80%);
     background-image: linear-gradient(#000000bf 20%, transparent 80%);
     z-index: 10;
+    -webkit-transition: background-image 0.2s;
+    -o-transition: background-image 0.2s;
     transition: background-image 0.2s;
 }
 
 header.scrolldown_header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00000040), color-stop(80%, transparent));
+    background-image: -webkit-linear-gradient(#00000040 0%, transparent 80%);
+    background-image: -o-linear-gradient(#00000040 0%, transparent 80%);
     background-image: linear-gradient(#00000040 0%, transparent 80%);
 }
 
 #logo {
     height: 80%;
+    -webkit-transform: translateY(15%);
+    -ms-transform: translateY(15%);
     transform: translateY(15%);
     background: url(../img/logo/logo_white.png) no-repeat center;
     background-size: contain;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
     transition: background 0.3s;
 }
 
@@ -49,30 +66,43 @@ header.scrolldown_header {
 }
 
 nav {
+    display: -ms-grid;
     display: grid;
     text-align: center;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
 #visible_nav {
     display: none;
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    -ms-grid-column: 4;
     grid-column-start: 4;
+    -ms-grid-column-span: 4;
     grid-column-end: 8;
 }
 
 #colapsable {
+    display: -ms-grid;
     display: grid;
     position: absolute;
     top: 105px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 80%;
     padding: 10px 15px;
     grid-gap: 15px;
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
     background-color: hsla(0, 0%, 0%, 0.65);
+    -webkit-box-shadow: 0.5px 2px 5px #00000040;
     box-shadow: 0.5px 2px 5px #00000040;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
 
@@ -84,6 +114,8 @@ nav {
     font-size: 50px;
     color: white;
     text-shadow: 0 2px 5px #00000040;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
     transition: color 0.3s;
 }
 
@@ -99,11 +131,15 @@ nav>a, nav>div>a {
     text-shadow: 1px 1px #000;
     text-decoration: none;
     border-bottom: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 nav>a:hover, nav>div>a:hover {
     padding: 6px 0;
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: 4px solid #f3a535;
 }
@@ -112,6 +148,7 @@ nav>a:hover, nav>div>a:hover {
 
 section {
     text-align: center;
+    display: -ms-grid;
     display: grid;
     padding: 110px 0;
 }
@@ -130,16 +167,20 @@ article {
     position: relative;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     height: 250px;
     max-width: 275px;
     padding: 40px;
     background-color: #00000080;
+    -webkit-box-shadow: 0.5px 2px 5px #00000080;
     box-shadow: 0.5px 2px 5px #00000080;
     z-index: 5;
 }
 
 #servicios {
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
 }
@@ -188,7 +229,9 @@ article {
 }
 
 #proyectos {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 50px
 }
@@ -211,11 +254,14 @@ article {
     min-height: 400px;
     background: #222323 url(../img/mañana.png)center no-repeat;
     background-size: contain;
+    -webkit-box-shadow: 0.5px 2px 5px #00000033;
     box-shadow: 0.5px 2px 5px #00000033;
 }
 
 #nosotros_despl {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
     background-color: #232323cc;
     position: absolute;
@@ -232,7 +278,9 @@ article {
 }
 
 #nosotros_text {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -244,28 +292,31 @@ article {
 /* Contacto */
 
 #RRSS {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 5px 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px 5px;
     padding: 10px;
 }
 
 #RRSS span {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 25px 10px 1fr;
     grid-template-columns: 25px 1fr;
     grid-gap: 10px;
     font-size: 0.8em;
     text-align: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: #505050;
 }
 
 form {
     padding: 10px;
-    display: grid;
     grid-gap: 25px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 0.5fr);
 }
 
 input, textarea, select, option {
@@ -277,7 +328,7 @@ input, textarea, select, option {
 }
 
 textarea {
-    height: 50px;
+    resize: none;
 }
 
 #form_button {
@@ -287,16 +338,21 @@ textarea {
     cursor: pointer;
 }
 
-form, input, label {
-    min-width: 0;
+select, input, textarea {
+    width: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
+    margin: 10px 0;
 }
 
 /* Footer */
 
 footer {
-    background-color: #505050;
+    background-color: hsla(0, 0%, 31%, 0.5);
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     color: white;
@@ -306,7 +362,9 @@ footer {
 }
 
 footer span {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     justify-items: center;
@@ -314,5 +372,7 @@ footer span {
 
 footer img {
     width: 30%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }

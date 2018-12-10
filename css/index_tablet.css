@@ -6,12 +6,15 @@ body {
 
 #logo {
     height: 90%;
+    -webkit-transform: translateY(5%);
+    -ms-transform: translateY(5%);
     transform: translateY(5%);
 }
 
 #colapsable {
     width: 90%;
     grid-gap: 15px;
+    -ms-grid-columns: 1fr 15px 1fr;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -36,9 +39,12 @@ section {
 
 #servicios p {
     display: block;
+    font-size: 0.8em;
 }
 
 #servicios i {
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotateZ(180deg)
 }
 
@@ -55,7 +61,10 @@ section {
 }
 
 #nosotros_text {
+    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -65,7 +74,7 @@ section {
 }
 
 #contacto {
-    margin: 0 60px;
+    padding: 0 10%
 }
 
 #RRSS {
@@ -74,6 +83,7 @@ section {
 }
 
 footer {
+    -ms-grid-columns: 1fr 150px 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 150px
 }
