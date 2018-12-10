@@ -19,7 +19,7 @@ $(function () {
 			}
 		}
 		else { // DESPLEGADO -> COLAPSADO
-			$('#nosotros_box').animate({ 'min-height': '300px' }, 500);
+			$('#nosotros_box').animate({ 'min-height': '400px' }, 500);
 			div.height('auto');
 		}
 		div.slideToggle(500);

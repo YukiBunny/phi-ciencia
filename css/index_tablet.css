@@ -1,0 +1,88 @@
+body {
+    background-image: url(../img/bg_tablet.png);
+}
+
+/* Inicio*/
+
+#logo {
+    height: 90%;
+    transform: translateY(5%);
+}
+
+#colapsable {
+    width: 90%;
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#inicio_textbox {
+    top: 40%;
+    left: 80%;
+}
+
+/* Main */
+
+section {
+    padding: 110px 20px;
+}
+
+#servicios article div {
+    width: 60%;
+}
+
+#servicios article:nth-last-child(2) div, #servicios article:nth-last-child(4) div {
+    right: 0;
+}
+
+#servicios p {
+    display: block;
+}
+
+#servicios i {
+    transform: rotateZ(180deg)
+}
+
+#proyectos article img {
+    width: 50%;
+}
+
+#proyectos article p {
+    width: 50%;
+}
+
+#nosotros_box {
+    margin-top: 30px;
+}
+
+#nosotros_text {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+#nosotros_text h4 {
+    text-align: left;
+    padding: 0 20px;
+}
+
+#contacto {
+    margin: 0 60px;
+}
+
+#RRSS {
+    padding: 10px 80px;
+    grid-gap: 25px 40px;
+}
+
+footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px
+}
+
+footer span {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+footer img {
+    width: 50%;
+}

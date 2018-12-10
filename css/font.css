@@ -46,7 +46,7 @@ em {
     font-style: italic;
 }
 
-em, b, strong {
+article em, article b, article strong {
     color: hsl(32, 93%, 80%);
 }
 
@@ -56,10 +56,14 @@ p {
     text-align: justify;
 }
 
+span {
+    font-weight: bold;
+}
+
 h1 {
     font-size: 1.6em;
     width: 80%;
-    padding: 110px 0 10px 0;
+    padding: 10px;
     letter-spacing: 4px;
     margin: 0 auto 20px auto;
     color: #f3a535;
@@ -98,8 +102,4 @@ h4 {
 
 #proyectos p {
     color: #2d2d2d;
-}
-
-span {
-    font-weight: bold;
 }
