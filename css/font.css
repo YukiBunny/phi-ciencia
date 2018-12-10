@@ -62,8 +62,8 @@ h1 {
     padding: 110px 0 10px 0;
     letter-spacing: 4px;
     margin: 0 auto 20px auto;
-    color: #f7931e;
-    border-bottom: 3px solid #f7931e;
+    color: #f3a535;
+    border-bottom: 3px solid #f3a535;
 }
 
 h2 {
@@ -85,7 +85,7 @@ h4 {
 }
 
 #nosotros h4 {
-    color: #f7931e;
+    color: #f3a535;
 }
 
 #nosotros p {

@@ -87,7 +87,7 @@ nav#visible_nav {
 }
 
 #boton_nav.scrolldown_boton {
-    color: #f7931e;
+    color: #f3a535;
 }
 
 nav>a, nav>div>a {
@@ -104,7 +104,7 @@ nav>a, nav>div>a {
 nav>a:hover, nav>div>a:hover {
     padding: 6px 0;
     transform: translateY(4px);
-    border-bottom: 4px solid #f7931e;
+    border-bottom: 4px solid #f3a535;
 }
 
 /* Main */
@@ -228,9 +228,9 @@ form {
 
 input, textarea, select, option {
     border: none;
-    border-bottom: 2px solid #f7931e;
+    border-bottom: 2px solid #f3a535;
     padding: 5px;
-    color: #f7931e;
+    color: #f3a535;
     background-color: transparent;
 }
 
@@ -241,7 +241,7 @@ textarea {
 
 button {
     grid-row-start: 11;
-    background-color: #f7931e;
+    background-color: #f3a535;
     color: white;
     border: none;
     cursor: pointer;
