@@ -203,7 +203,7 @@ article {
 #nosotros_despl {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background-color: #23232380;
+    background-color: #232323cc;
     position: absolute;
     width: 100%;
     bottom: 0;

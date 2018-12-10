@@ -4,7 +4,7 @@ $(function () {
 		var subject = "?subject=" + $("#form_subject").val();
 		var body = '&body=' + $('#form_message').val().replace(/\n/g, "%0D%0A") + '%0D%0A' + $('#form_ocupation').val();
 
-		window.location.href = 'mailto:' + to + subject + body;
+		location.href = 'mailto:' + to + subject + body;
 
 	});
 	function formSubmit() {
