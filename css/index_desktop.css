@@ -92,8 +92,8 @@ nav>a, nav>div>a {
 #proyectos {
     -ms-grid-columns: 1fr 100px 1fr 100px 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
-    padding: auto 250px;
+    grid-gap: 10%;
+    padding: 110px 20%;
 }
 
 #proyectos h1 {
@@ -124,11 +124,16 @@ nav>a, nav>div>a {
     padding: 20px;
 }
 
+select, input, textarea {
+    width: 60%;
+}
+
 #RRSS {
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    padding: 100px 125px;
+    grid-gap: 0.5%;
+    margin-left: 2%;
+    padding: 100px 5%;
 }
 
 #RRSS span {
@@ -137,8 +142,6 @@ nav>a, nav>div>a {
     -ms-grid-columns: 0.1fr 10px 0.9fr;
     grid-template-columns: 0.1fr 0.9fr;
 }
-
-form {}
 
 footer {
     -ms-grid-columns: 1fr 800px 1fr;

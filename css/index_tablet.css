@@ -73,12 +73,11 @@ section {
 }
 
 select, input, textarea {
-    width: 80%;
-    margin: 0;
+    width: 70%;
 }
 
 #RRSS {
-    padding: 10px 5%;
+    padding: 10px 15%;
     grid-gap: 25px 5%;
 }
 
