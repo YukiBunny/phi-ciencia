@@ -10,125 +10,98 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/index_tablet.css" media="screen and (min-width:426px)">
+	<link rel="stylesheet" href="css/index_tablet.css" media="screen and (min-width:720px)">
 	<link rel="stylesheet" href="css/index_desktop.css" media="screen and (min-width:1024px)">
-
 	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/brands.css">
 	<link rel="stylesheet" href="css/solid.css">
-
 	<link rel="stylesheet" href="css/font.css">
-
 	<script src="js/nav.js"></script>
 	<script src="js/despl.js"></script>
 	<script src="js/form.js"></script>
 </head>
 
 <body>
-	<header>
-		<nav id="colapsable_nav">
-			<i class="fas fa-bars" id="boton_nav"></i>
-			<div id="colapsable" style="display:none">
-				<a href="#servicios">Servicios</a>
-				<a href="#proyectos">Proyectos</a>
-				<a href="#nosotros">Nosotros</a>
-				<a href="#contacto">Contacto</a>
-			</div>
-		</nav>
-		<a href="#inicio" id="logo" alt="Phiciencia3D" href="#inicio"></a>
-		<nav id="visible_nav">
+	<nav>
+		<div id="nav-brand">
+			<i id="nav-collapse" class="text-white fas fa-bars fa-3x"></i>
+			<a id="brand-logo" href="#"><img src="img/logo/logo_white.png"></a>
+		</div>
+		<div id="nav-links">
 			<a href="#servicios">Servicios</a>
 			<a href="#proyectos">Proyectos</a>
 			<a href="#nosotros">Nosotros</a>
-			<a href="#contacto">Contacto</a>
-		</nav>
-	</header>
-	<section id="inicio">
-		<article id="inicio_textbox">
+			<a href="#contactos">Contactos</a>
+		</div>
+	</nav>
+	<header>
+		<div id="bienvenida">
 			<h2>Phiciencia3D</h2><br>
 			<h3>Te da la bienvenida <br> Comprometidos con la excelencia</h3>
-		</article>
-	</section>
+		</div>
+	</header>
 	<section id="servicios">
 		<h1>SERVICIOS</h1>
-		<article>
-			<div class="servicios_despl">
-				<h3>
+		<article class="servicio collapse-parent" style="background-image: url('img/sevicios/impresion.jpg')">
+			<div>
+				<h3 class="collapse-trigger">
 					<i class="fas fa-caret-up"></i> Impresión de piezas 3D <i class="fas fa-caret-up"></i>
 				</h3>
-				<div>
-
-				</div>
-				<p>&emsp;
-					<b>Ponemos a tu servicio imprimir lo imposible</b>,
-					Ahora sólo debes pensar cuál será tu próxima idea y Phiciencia3D convierte tus proyectos de digital a real en unos
-					sencillos pasos. <br>
-					Nos puedes enviar el diseño por mail y te contestaremos en la brevedad con una cotización. 
-					Puedes pasar a buscar tu pieza tenemos opción de despacho. <em>El costo depende de la región de despacho</em>.
-				</p>
+				<p class="collapse-content">&emsp; <b>Ponemos a tu servicio imprimir lo imposible</b>, Ahora sólo debes pensar cuál
+					será tu próxima idea y Phiciencia3D convierte tus proyectos de digital a real en unos sencillos pasos. <br> Nos
+					puedes enviar el diseño por mail y te contestaremos en la brevedad con una cotización.  Puedes pasar a buscar tu
+					pieza tenemos opción de despacho. <em>El costo depende de la región de despacho</em>. </p>
 			</div>
 		</article>
-		<article>
-			<div class="servicios_despl">
-				<h3>
+		<article class="servicio collapse-parent" style="background-image: url('img/sevicios/capacitacion.jpg')">
+			<div>
+				<h3 class="collapse-trigger">
 					<i class="fas fa-caret-up"></i> Capacitación impresión 3D <i class="fas fa-caret-up"></i>
 				</h3>
-				<p>&emsp; Ofrecemos capacitación sobre tecnología de impresión 3D, la tecnología del futuro que está impulsando la
-					4ª revolución industrial. Con la cual podrás aprender cómo funciona una impresora en 3D entre otros accesorios
-					como un escáner 3D que permite copiar objetos o personas y un Polisher que permite mejorar la calidad de la pieza
-					impresa en 3D para que se vea como si hubiera salido de una tienda y no necesitarás experiencia previa para poder
-					participar. <br>
-					<b>
-						También aprenderás lo básico para empezar a imprimir en 3D tus propios proyectos por ti mismo.
-					</b>
+				<p class="collapse-content">&emsp; Ofrecemos capacitación sobre tecnología de impresión 3D, la tecnología del
+					futuro que está impulsando la 4ª revolución industrial. Con la cual podrás aprender cómo funciona una impresora en
+					3D entre otros accesorios como un escáner 3D que permite copiar objetos o personas y un Polisher que permite
+					mejorar la calidad de la pieza impresa en 3D para que se vea como si hubiera salido de una tienda y no necesitarás
+					experiencia previa para poder participar. <br>
+					<b> También aprenderás lo básico para empezar a imprimir en 3D tus propios proyectos por ti mismo. </b>
 				</p>
 			</div>
 		</article>
-		<article>
-			<div class="servicios_despl">
-				<h3>
+		<article class="servicio collapse-parent" style="background-image: url('img/sevicios/soporte.jpeg')">
+			<div>
+				<h3 class="collapse-trigger">
 					<i class="fas fa-caret-up"></i> Soporte Tecnico <i class="fas fa-caret-up"></i>
 				</h3>
-				<p>&emsp;
-					En Phiciencia3D ofrecemos también la reparación, mantención y calibración, de impresoras 3D y te ayudamos a usar
-					de la mejor forma tu impresora 3D. <br>
-					<b>
-						Tenemos técnicos especialistas en variadas las marcas.
-					</b>
+				<p class="collapse-content">&emsp; En Phiciencia3D ofrecemos también la reparación, mantención y calibración, de
+					impresoras 3D y te ayudamos a usar de la mejor forma tu impresora 3D. <br>
+					<b> Tenemos técnicos especialistas en variadas las marcas. </b>
 				</p>
 			</div>
 		</article>
-		<article>
-			<div class="servicios_despl">
-				<h3>
+		<article class="servicio collapse-parent" style="background-image: url('img/sevicios/apoyo.jpg')">
+			<div>
+				<h3 class="collapse-trigger">
 					<i class="fas fa-caret-up"></i> Apoyo Escolar <i class="fas fa-caret-up"></i>
 				</h3>
-				<p>&emsp;
-					A pesar de que aún no se encuentran de manera generalizada en las aulas, las impresoras 3D aportan numerosos
-					beneficios en el ámbito de la educación. <br>
-					<b>
-						Fomentan la creatividad y la capacidad de resolver problemas, Generan más participación, Captan el interés de los
-						estudiantes, Facilitan la tarea del docente y Promueven la colaboración entre diferentes asignaturas y temáticas
-					</b>
+				<p class="collapse-content">&emsp; A pesar de que aún no se encuentran de manera generalizada en las aulas, las
+					impresoras 3D aportan numerosos beneficios en el ámbito de la educación. <br>
+					<b> Fomentan la creatividad y la capacidad de resolver problemas, Generan más participación, Captan el interés de
+						los estudiantes, Facilitan la tarea del docente y Promueven la colaboración entre diferentes asignaturas y
+						temáticas </b>
 				</p>
 			</div>
 		</article>
-		<article>
-			<div class="servicios_despl">
-				<h3>
+		<article class="servicio collapse-parent" style="background-image: url('img/sevicios/cnc.jpeg')">
+			<div>
+				<h3 class="collapse-trigger">
 					<i class="fas fa-caret-up"></i> CNC Fresado <i class="fas fa-caret-up"></i>
 				</h3>
-				<p>&emsp;
-					En Phiciencia3D también te ayudamos a construir tus propios <em>circuitos impresos (PCB)</em> , con ayuda del
-					fresado CNC.
-					<br>
-					El cuál es la operación de mecanizado que más se utiliza en una Fresadora con <em>control numérico por computadora
-						(CNC)</em>. Técnica usada en fabricación de circuitos impresos, con acabados semi-profesionales. Placas conocidas
-					como
-					PCB <em>(Printed Circuit Board)</em>, consiste en la base aislante llamada “baquelita, fibra de vidrio”, en la
-					siguiente
-					capa se usa el cobre como conductor usadas como soporte y fijación de proyectos electrónicos.
-				</p>
+				<p class="collapse-content">&emsp; En Phiciencia3D también te ayudamos a construir tus propios <em>circuitos
+						impresos (PCB)</em> , con ayuda del fresado CNC. <br> El cuál es la operación de mecanizado que más se utiliza en
+					una Fresadora con <em>control numérico por computadora (CNC)</em>. Técnica usada en fabricación de circuitos
+					impresos, con acabados semi-profesionales. Placas conocidas como PCB <em>(Printed Circuit Board)</em>, consiste en
+					la base aislante llamada “baquelita, fibra de vidrio”, en la siguiente capa se usa el cobre como conductor usadas
+					como soporte y fijación de proyectos electrónicos. </p>
 			</div>
 		</article>
 	</section>
@@ -136,36 +109,24 @@
 		<h1>PROYECTOS</h1>
 		<article>
 			<img src="img/proyectos/autis-bot.jpeg">
-			<h3>
-				Robot Autisbot
-			</h3>
-			<p>&emsp;
-				Ensamblado de piezas impresas en 3D, Autis bot es un robot bípedo autónomo, el que será controlado a distancia
-				mediante un dispositivo electrónico como una Tablet o un Smartphone. Los cuales tendrán una base de acciones que
-				ejecutará el robot para llevar acabo estimulación e interacción con los niños y jóvenes autistas.
-			</p>
+			<h3> Robot Autisbot </h3>
+			<p>&emsp; Ensamblado de piezas impresas en 3D, Autis bot es un robot bípedo autónomo, el que será controlado a
+				distancia mediante un dispositivo electrónico como una Tablet o un Smartphone. Los cuales tendrán una base de
+				acciones que ejecutará el robot para llevar acabo estimulación e interacción con los niños y jóvenes autistas. </p>
 		</article>
 		<article>
 			<img src="img/proyectos/cnc_arduino.jpeg">
-			<h3>
-				CNC Arduino
-			</h3>
-			<p>&emsp;
-				Control numérico computacional es un sistema de automatización de máquinas herramienta que son operadas mediante
-				comandos programados. Es decir, una máquina controlada por computador que es capaz de moldear, grabar, tallar y
-				fresar todo tipo de materiales de la forma y tamaño que deseemos.
-			</p>
+			<h3> CNC Arduino </h3>
+			<p>&emsp; Control numérico computacional es un sistema de automatización de máquinas herramienta que son operadas
+				mediante comandos programados. Es decir, una máquina controlada por computador que es capaz de moldear, grabar,
+				tallar y fresar todo tipo de materiales de la forma y tamaño que deseemos. </p>
 		</article>
 		<article>
 			<img src="img/proyectos/bot-araña.jpeg">
-			<h3>
-				Bot araña
-			</h3>
-			<p>&emsp;
-				Robot araña, o más bien es un robot autónomo con cuatro extremidades. La estructura está construida con una
-				impresora 3d, y la cual se controla a través de Bluetooth y un Arduino que controla sus servos, imitando los
-				movimientos de una araña real.
-			</p>
+			<h3> Bot araña </h3>
+			<p>&emsp; Robot araña, o más bien es un robot autónomo con cuatro extremidades. La estructura está construida con
+				una impresora 3d, y la cual se controla a través de Bluetooth y un Arduino que controla sus servos, imitando los
+				movimientos de una araña real. </p>
 		</article>
 	</section>
 	<section id="nosotros">
@@ -179,22 +140,17 @@
 					<div id="nosotros_text">
 						<div>
 							<h4>Historia</h4>
-							<p>&emsp;
-								La tecnología de impresión 3D llega en la década de los 80 abriendo un mundo de posibilidades no únicamente
-								para
-								la industria sino también para la educación, ciencia y arte. Consiste en la fabricación digital e impresión 3D,
-								la cual ofrece la oportunidad de ilustrar conceptos complejos, también denominada como la siguiente revolución
-								industrial. Hoy tecnología cada vez está más presente la en las aulas, dado que las impresoras 3D son unas de
-								las grandes apuestas el sector educación como apoyo en determinadas asignaturas gracias a la posibilidad de
-								materialización de un concepto estudiado en un objeto real mediante una impresora 3D, para imprimir lo que se
-								desee.
-							</p>
+							<p>&emsp; La tecnología de impresión 3D llega en la década de los 80 abriendo un mundo de posibilidades no
+								únicamente para la industria sino también para la educación, ciencia y arte. Consiste en la fabricación digital
+								e impresión 3D, la cual ofrece la oportunidad de ilustrar conceptos complejos, también denominada como la
+								siguiente revolución industrial. Hoy tecnología cada vez está más presente la en las aulas, dado que las
+								impresoras 3D son unas de las grandes apuestas el sector educación como apoyo en determinadas asignaturas
+								gracias a la posibilidad de materialización de un concepto estudiado en un objeto real mediante una impresora
+								3D, para imprimir lo que se desee. </p>
 						</div>
 						<div>
 							<h4>¿Quiénes Somos?</h4>
-							<p>
-								&emsp;
-								Nuestra organización nace en el año 2018, con el objetivo difundir y fomentar la formación en
+							<p> &emsp; Nuestra organización nace en el año 2018, con el objetivo difundir y fomentar la formación en
 								tecnologías como la impresión 3D, viendo el crecimiento que ha tenido la está en otros países, nos propusimos
 								contribuir a nivel local para acercar ésta nueva tecnología a las personas, acercándolas a estudiantes,
 								profesores, emprendedores y entusiastas. Permitiendo que todas las personas que deseen desarrollar sus
@@ -202,14 +158,11 @@
 						</div>
 						<div>
 							<h4>Misión</h4>
-							<p>&emsp;
-								Acercar la impresión 3D a todos los actores sociales, contribuyendo al conocimiento de nuevas
+							<p>&emsp; Acercar la impresión 3D a todos los actores sociales, contribuyendo al conocimiento de nuevas
 								tecnologías para así sumar a más agentes que participen de esta revolucionaria tecnología eliminando las
-								brechas
-								sociales que conlleva. </p>
+								brechas sociales que conlleva. </p>
 							<h4>Visión</h4>
-							<p>&emsp;
-								Lograr que la impresión 3d, sea una herramienta de estudio, trabajo e implementada en las áreas de la
+							<p>&emsp; Lograr que la impresión 3d, sea una herramienta de estudio, trabajo e implementada en las áreas de la
 								Ciencia, Tecnología, Ingeniería, Artes, Matemáticas. De este modo conseguir que las tecnologías sobre impresión
 								3D logren un desempeño que pueda ayudar a formar parte de una herramienta de estudio. </p>
 						</div>
@@ -253,8 +206,7 @@
 	</section>
 	<footer>
 		<span>
-			<img src="img/logo/bunny_brush_ border.png" alt="Bunny Brush">
-			Página hecha por Bunny Brush </span>
+			<img src="img/logo/bunny_brush_ border.png" alt="Bunny Brush"> Página hecha por Bunny Brush </span>
 		<img src="img/logo/logo_white.png" alt="Phiciencia3D">
 	</footer>
 </body>
