@@ -165,11 +165,9 @@ article {
 
 #inicio_textbox {
     position: relative;
-    top: 50%;
+    bottom: -50%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-55%);
     height: 250px;
     max-width: 275px;
     padding: 40px;
@@ -177,6 +175,7 @@ article {
     -webkit-box-shadow: 0.5px 2px 5px #00000080;
     box-shadow: 0.5px 2px 5px #00000080;
     z-index: 5;
+    transition: all 0.3s;
 }
 
 #servicios {
@@ -193,23 +192,23 @@ article {
 }
 
 #servicios article:nth-last-child(5) {
-    background-image: url(../img/sevicios/impresion.jpg)
+    background-image: url(../img/servicios/impresion.jpg)
 }
 
 #servicios article:nth-last-child(4) {
-    background-image: url(../img/sevicios/capacitacion.jpg)
+    background-image: url(../img/servicios/capacitacion.jpg)
 }
 
 #servicios article:nth-last-child(3) {
-    background-image: url(../img/sevicios/soporte.jpeg)
+    background-image: url(../img/servicios/soporte.jpeg)
 }
 
 #servicios article:nth-last-child(2) {
-    background-image: url(../img/sevicios/apoyo.jpg)
+    background-image: url(../img/servicios/apoyo.jpg)
 }
 
 #servicios article:nth-last-child(1) {
-    background-image: url(../img/sevicios/cnc.jpeg)
+    background-image: url(../img/servicios/cnc.jpeg)
 }
 
 #servicios article div {
@@ -314,10 +313,7 @@ article {
     color: #505050;
 }
 
-form {
-    padding: 10px;
-    grid-gap: 25px;
-}
+form {}
 
 input, textarea, select, option {
     border: none;
@@ -339,10 +335,7 @@ textarea {
 }
 
 select, input, textarea {
-    width: 100%;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+    width: 80%;
     margin: 10px 0;
 }
 
