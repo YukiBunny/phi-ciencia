@@ -129,9 +129,11 @@ select, input, textarea {
 }
 
 #RRSS {
-    grid-template-columns: repeat(4, 0.25fr);
+    -ms-grid-columns: 0.5fr 10px 0.5fr 10px 0.5fr 10px 0.5fr;
+    grid-template-columns: repeat(4, 0.5fr);
     grid-gap: 10px;
-    padding-left: 5%;
+    padding: 75px;
+    padding-left: 100px;
 }
 
 #RRSS span {
