@@ -169,14 +169,14 @@ article {
 
 #inicio_textbox {
     position: relative;
-    bottom: -50%;
+    bottom: -40%;
     left: 50%;
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-    height: 250px;
+    -webkit-transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    transform: translateX(-45%);
+    height: 50vh;
     max-width: 275px;
-    padding: 40px;
+    padding: 5px;
     background-color: #00000080;
     -webkit-box-shadow: 0.5px 2px 5px #00000080;
     box-shadow: 0.5px 2px 5px #00000080;
@@ -311,6 +311,7 @@ article {
     display: grid;
     grid-gap: 25px 0;
     padding: 20px 0;
+    width: 90%;
 }
 
 #RRSS span {
