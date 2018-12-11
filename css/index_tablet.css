@@ -77,8 +77,13 @@ select, input, textarea {
 }
 
 #RRSS {
-    padding: 10px 15%;
-    grid-gap: 25px 5%;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-gap: 25px;
+    padding-left: 10%;
+}
+
+#RRSS span {
+    padding: 0 5%;
 }
 
 footer {

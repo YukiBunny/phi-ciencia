@@ -1,6 +1,6 @@
 $(function () {
 	$('.servicios_despl>h3').click(function () {
-		conditionalResize($(this), $(this).siblings('p'), $(this).parent().parent(), 400, 500);
+		$(this).siblings('p').slideToggle(500);
 		$(this).children('i').toggleClass('fa-caret-down');
 		$(this).children('i').toggleClass('fa-caret-up')
 	});

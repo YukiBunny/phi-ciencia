@@ -144,6 +144,10 @@ nav>a:hover, nav>div>a:hover {
     border-bottom: 4px solid #f3a535;
 }
 
+nav>a:active, nav>div>a:active {
+    color: #f3a535
+}
+
 /* Main */
 
 section {
@@ -298,21 +302,23 @@ article {
 
 /* Contacto */
 
+#contacto {
+    width: 100%;
+}
+
 #RRSS {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 5px 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px 5px;
-    padding: 10px;
+    grid-gap: 25px 0;
 }
 
 #RRSS span {
-    padding: 0 5%;
+    padding: 0 15%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 25px 10px 1fr;
     grid-template-columns: 25px 1fr;
+    padding-left: 30%;
     grid-gap: 10px;
     font-size: 0.8em;
     text-align: left;

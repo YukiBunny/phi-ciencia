@@ -129,15 +129,13 @@ select, input, textarea {
 }
 
 #RRSS {
-    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5%;
-    margin-left: 2%;
-    padding: 100px 5%;
+    grid-template-columns: repeat(4, 0.25fr);
+    grid-gap: 10px;
+    padding-left: 5%;
 }
 
 #RRSS span {
-    grid-gap: 10px;
+    grid-gap: 5px;
     font-size: 1em;
     -ms-grid-columns: 0.1fr 10px 0.9fr;
     grid-template-columns: 0.1fr 0.9fr;
@@ -147,18 +145,17 @@ footer {
     -ms-grid-columns: 1fr 800px 1fr;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px 50px;
-    grid-gap: 800px;
+    grid-gap: 50%;
     margin-top: 100px;
 }
 
 footer img {
-    width: 30%;
+    width: 40%;
 }
 
 footer span {
     -ms-grid-columns: 0.4fr 5px 0.6fr;
     grid-template-columns: 0.4fr 0.6fr;
-    grid-gap: 5px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -166,5 +163,5 @@ footer span {
 }
 
 footer span img {
-    width: 80%;
+    width: 100%;
 }
