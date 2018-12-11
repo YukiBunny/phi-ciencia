@@ -167,6 +167,8 @@ article {
     position: relative;
     bottom: -50%;
     left: 50%;
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
     transform: translateX(-55%);
     height: 250px;
     max-width: 275px;
@@ -175,6 +177,8 @@ article {
     -webkit-box-shadow: 0.5px 2px 5px #00000080;
     box-shadow: 0.5px 2px 5px #00000080;
     z-index: 5;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -189,6 +193,7 @@ article {
     position: relative;
     background-size: cover;
     background-position: center;
+    -webkit-box-shadow: 0.5px 2px 5px #0000005d;
     box-shadow: 0.5px 2px 5px #0000005d;
 }
 
@@ -241,6 +246,7 @@ article {
     width: 75%;
     border-radius: 50%;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0.5px 2px 8px #00000080;
     box-shadow: 0.5px 2px 8px #00000080;
 }
 
